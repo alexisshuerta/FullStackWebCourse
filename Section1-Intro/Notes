@@ -1,0 +1,25 @@
+Section 1: Intro to Web Development
+
+6. Frontend vs Backend Development
+  Frontend 
+  - also known as CLIENT SIDE
+  - HTML, CSS, JS
+  - Frameworks - Bootstrap, Angular, JQuery, SASS, LESS
+  
+  Backend
+  - also known as SERVER SIDE
+  - clientside sends request to serverside
+  - makes websites non static (dynamic)
+  - stores Data
+  - holds together frontend components
+
+  Databases
+  - firebase
+  - mongoDB
+  - mySQL
+
+  Backend Languages
+  - Ruby
+  - Java
+  - Python
+
