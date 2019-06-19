@@ -14,5 +14,6 @@ Section 2: Getting Started with HTML
   - <table></table> creates a table
     - <tr></tr> is a table ROW
     - <td></td> is table data, that goes inside a row to create columns
+      - can put <button></button> inside of <td></td>
 
 4. 
