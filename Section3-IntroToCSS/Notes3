@@ -1,0 +1,18 @@
+Section 3: Introduction to CSS
+
+12. What is CSS?
+  -
+13. How to use Inline, Internal and External CSS
+  - Inline: 
+      - inside the tags you put in a style tag
+      - not very effective, not reusing code
+  - Internal:
+    - inside the header tag you put in a style tag and inside
+      you identify the element you want to style folowed by brackets with styling inside
+    - is better than inline, but can make the file get messy/large aswell
+  - External
+    - inside the head you put a link element like so: <link rel="stylesheet" href="style.css">
+      - the href is the path to the CSS file
+    - you identify the element you want to style folowed by brackets with styling inside
+    - better ways of using CSS
+    
