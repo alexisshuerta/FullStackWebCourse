@@ -20,8 +20,18 @@ Section 3: Introduction to CSS
   3 Methods To Style Elements
     - directly target element
       body {}
+      - every single element like an h1, will style every single h1 element
     - grab it by the class
       .square{}
+        - these are great when you want to use the same styling across the web app
+
     - add an id to it
       * ID should be used sparingly, and the id should be very specific and unique 
+      * shouldnt use ID all over the place, and should avoid using ID to style things
+      - use the id sparingly, bc id's are mainly used for 
+  
+15. CSS: Colors
+  - gradient is supported differently on certain browsers
+  - the "parameters" following the shadow styling are "x and y coordinates"
+
   
