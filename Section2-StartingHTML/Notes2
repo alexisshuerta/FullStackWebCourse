@@ -1,19 +1,22 @@
 Section 2: Getting Started with HTML
 
-1. Intro to HTML, HEAD, BODY, and HEADER
+8. Intro to HTML, HEAD, BODY, and HEADER
   - have an html tag
   - head has non visible elements, expect for title..
 
-2. HTML: Lists, Paragraphs, and Text Styling
+9. HTML: Lists, Paragraphs, and Text Styling
   - <ul></ul> is an unordered list aka bullets
     - <li></li> is a list item that can go in an unordered list
   - <a></a> with href="" can link to other pages
   - <hr> stands for horizontal rule
 
-3. HTML: Displaying Data With Tables
+10. HTML: Displaying Data With Tables
   - <table></table> creates a table
     - <tr></tr> is a table ROW
     - <td></td> is table data, that goes inside a row to create columns
       - can put <button></button> inside of <td></td>
 
-4. 
+11. HTML: Images & Forms
+  - Youtube -> embed -> copy paste <iframe></iframe>
+  - use tables to space elements side by side if using only HTML
+  
