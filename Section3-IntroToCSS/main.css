@@ -12,22 +12,21 @@ body {
     box-shadow: 3px 5px 3px black; */
 }
 
-h1 {
+h1, h2, h3 {
     color: #ffffff;
     text-shadow: 2px 2px 5px black;
+    line-height: 1rem;
+    font-family: sans-serrif;
 }
 
-h2 {
-    color: rgb(8, 204, 255);
-    text-shadow: 1px 1px 3px darkblue;
-}
+
 
 .borderImg {
     border: 2px dashed red;
     width: 250px;
 }
 
-/* the > means only one level deep */
+/* the > means only one level deep / immediate children*/
 ul > li {
     color: yellow;
 }
