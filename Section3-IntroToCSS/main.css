@@ -1,8 +1,15 @@
+body {
+    background-image: url(nintendo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /* Three ways to color */
 .container {
     /* Gradient */
-    background: linear-gradient(to right, #80ccff, #b3f0ff);
-    box-shadow: 3px 5px 3px black;
+    /* background: linear-gradient(to right, #80ccff, #b3f0ff);
+    box-shadow: 3px 5px 3px black; */
 }
 
 h1 {
@@ -15,5 +22,8 @@ h2 {
     text-shadow: 1px 1px 3px darkblue;
 }
 
-
+.borderImg {
+    border: 2px dashed red;
+    width: 250px;
+}
 

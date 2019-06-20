@@ -34,4 +34,9 @@ Section 3: Introduction to CSS
   - gradient is supported differently on certain browsers
   - the "parameters" following the shadow styling are "x and y coordinates"
 
+16. CSS: Backrounds & Borders
+  - can set a background image in body
+  - can add and style an image using a class
+    - can add a border and changed width, as well as configure the repeat
+
   
