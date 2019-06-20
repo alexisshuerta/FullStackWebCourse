@@ -42,5 +42,10 @@ Section 3: Introduction to CSS
 17. Using browswer inspector tools
   - broswers give information of html layout and css styling
   - you can select mobile/responsive layout to see what the page is like on mobile
+  
+18. CSS: Combinators
+  - descendant and child Selectors
+  - ul > li means only one level deep or only targets the immediate children
+  - leaving the > symbol out means that the ul and every descendant of it that is a li will be targeted
 
   

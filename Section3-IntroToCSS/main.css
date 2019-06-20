@@ -27,3 +27,14 @@ h2 {
     width: 250px;
 }
 
+/* the > means only one level deep */
+ul > li {
+    color: yellow;
+}
+
+
+/* ul is the parent and li is the child */
+/* ul li {
+    color: red;
+    font-size: 20px
+} */
