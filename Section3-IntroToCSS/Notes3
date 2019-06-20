@@ -15,4 +15,13 @@ Section 3: Introduction to CSS
       - the href is the path to the CSS file
     - you identify the element you want to style folowed by brackets with styling inside
     - better ways of using CSS
-    
+
+14. CSS: Element, ID & Class Selectors
+  3 Methods To Style Elements
+    - directly target element
+      body {}
+    - grab it by the class
+      .square{}
+    - add an id to it
+      * ID should be used sparingly, and the id should be very specific and unique 
+  

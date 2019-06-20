@@ -1,8 +1,24 @@
-h1 {
-    
-    color: chartreuse;
+/** Styling by directly referencing an element */
+body {
+  background-color: #cc99ff;
 }
 
-h2 {
-    color: coral;
+h1{
+  color: red;
+  text-align: center;
+}
+
+
+/** Styling by referencing the class */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: auto;
+}
+
+/*! styling use an id */
+#circle {
+  color: darkred;
+  font-size: 40px;
 }
