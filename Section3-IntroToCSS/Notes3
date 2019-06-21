@@ -54,4 +54,18 @@ Section 3: Introduction to CSS
   - seperate by commas
   - can group any types of selectors before the styling statements
 
+20. CSS: Specificity
+  - with h1 tag and similar, the one that is declared last is the one that takes precedence
+  - the "specificity point template" seems important
+
+    Style-Attribute, Id, Class/psuedoclass/Attribute, Elements
+
+  - if same "point value" then the last one takes precedence
+  - inline css style Attribute has the most value
+
+  Important Rule (!important)
+    - not recommended, bad for debugging
+    - dominates all style attributes
+
+
   

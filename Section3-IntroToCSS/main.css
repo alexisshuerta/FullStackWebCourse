@@ -12,12 +12,24 @@ body {
     box-shadow: 3px 5px 3px black; */
 }
 
+
+html h1 {
+    color: red;
+}
+
+body h1 {
+    color: green;
+}
+
+
 h1, h2, h3 {
     color: #ffffff;
     text-shadow: 2px 2px 5px black;
     line-height: 1rem;
     font-family: sans-serrif;
 }
+
+
 
 
 
