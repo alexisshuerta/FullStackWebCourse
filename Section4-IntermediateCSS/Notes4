@@ -39,4 +39,18 @@ Section 4: Intermediate CSS
     -display: block (adds margin)
     -margin: auto
       - takes up any extra margin around an element and disperses it evenly
+  
+ 24. CSS: Padding and Margin
+  Margin: takes an element and creates space around the element, the element is going to push itself away from surround elem
+    - number value
+    - -bottom, -left, -right,... to specify where to put margin
+
+  Padding: creates space from within the center of the element and pushes out to the edges
+    - inner margin
+    - can enter multiple values
+      - values go clock wise (top, right, bottom, left)
+      - if you only put 2 values of px, then the first value is for top&bottom while other is for left&right padding
+      - if three values, then 1st-top 2nd-right&left 3rd-bottom
+
+
     
