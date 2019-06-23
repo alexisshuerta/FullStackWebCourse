@@ -22,3 +22,21 @@ Section 4: Intermediate CSS
   - pick fonts and then embedd them
   - have backup fonts in case your fonts aren't supported
 
+23. CSS Images
+  Border-radius: can enter in px amounts or percentages
+    - if you have a perfect square and use 50%, you get a circle
+    - px and percent is how much of the corner is taken off
+  Padding: space between the border and the image
+
+  img{}
+    - max-width
+      -take up 100% of the viewport
+    -height to auto
+    -padding to 5px to give space around image as it shrinks
+
+    -opacity: goes from 0 to 1 (transparent -> opaque)
+
+    -display: block (adds margin)
+    -margin: auto
+      - takes up any extra margin around an element and disperses it evenly
+    
