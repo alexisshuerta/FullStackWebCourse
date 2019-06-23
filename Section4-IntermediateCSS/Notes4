@@ -1,0 +1,18 @@
+Section 4: Intermediate CSS
+
+21. CSS: Text Styling & Formatting
+  Fonts:
+    - Families
+      - families usally entered in the body or html css selector
+      - families are listed but only the first one is used..
+        the next one is used if the current one cant load on a browser
+      -
+    - Style
+      - italic, normal, or oblique
+    - Size
+      - setting a size is very strict/very static
+    - Letter/Word Spacing
+    - Color
+    -text-transform
+    - Text Formatting in html
+      - bold(b), italic(i), emphasize(em), strong(strong), strikethrough(del), highlight(mark)

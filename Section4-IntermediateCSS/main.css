@@ -1,0 +1,58 @@
+html {
+  font-family: "Times New Roman", serif, sans-serif;
+}
+
+body {
+  /* background-image: url(nintendo.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+
+  background-color: #444;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  line-height: 1rem;
+  font-family: sans-serrif;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: normal;
+}
+
+.formatting {
+  font-size: 25px;
+  line-height: 2em;
+  color: white;
+}
+
+/* anchor tag */
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: yellow;
+  word-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/* Link image */
+.borderImg {
+  border: 2px dashed red;
+  width: 250px;
+}
+
+/* ul is the parent and li is the child */
+ul li {
+  color: red;
+  font-size: 20px;
+}
+
+/* the > means only one level deep / immediate children*/
+ul > li {
+  color: green;
+}
