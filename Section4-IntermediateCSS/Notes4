@@ -52,5 +52,19 @@ Section 4: Intermediate CSS
       - if you only put 2 values of px, then the first value is for top&bottom while other is for left&right padding
       - if three values, then 1st-top 2nd-right&left 3rd-bottom
 
+  25. CSS: Rows & Columns
+    -Setting up a grid system
 
+    row::after
+      - "every time a row is created, we want something to happen after it"
+      - clear : clearing any floats...
+
+    col-1 through 12
+      - widths are different and in percentages
+      - * = grabbing every single element
     
+    box-sizing:
+
+    columns have to add up to 12
+
+    float:
