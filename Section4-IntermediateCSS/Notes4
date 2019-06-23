@@ -16,3 +16,9 @@ Section 4: Intermediate CSS
     -text-transform
     - Text Formatting in html
       - bold(b), italic(i), emphasize(em), strong(strong), strikethrough(del), highlight(mark)
+
+22. CSS: Google Fonts
+  - developers.google.com/fonts for free fonts ->guids->fonts
+  - pick fonts and then embedd them
+  - have backup fonts in case your fonts aren't supported
+
