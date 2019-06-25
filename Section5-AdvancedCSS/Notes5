@@ -42,3 +42,15 @@ Section 5: Advanced CSS: Building and styling website
   - make the position of the dropdownIcon absolute befor you style the rest
   - position: absolute; keeps element stay where they are
     - add top:0; and right:0; to keep the element there...
+
+30. CSS: Creating the Form Group
+  - display: flex; be able to latch onto and grab any element inside the row,
+    to help the elements change size
+    - flex-wrap: wrap; all the elements inside the row, take the elements and wrap aronund underneath
+    - align items: center; helps take the elements inside the flex container and center them.
+    - create div tags to encapsulate sections, for future styling.
+    - Header 1 tags have a margin, and labels/paragraph tags dont
+    - its good to use line-height style when working with text, rather than padding, etc..
+    - type - allows javascript to attain the info
+    - placeholder - placeholder text inside an input field
+    - name - another way to interact with the box..
