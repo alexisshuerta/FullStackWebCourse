@@ -2,55 +2,68 @@
 nav,
 header,
 footer {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
-    /* everything "sucked to the edges"/no default margin */
-    margin: 0;
+  line-height: 1;
+  /* everything "sucked to the edges"/no default margin */
+  margin: 0;
 }
 
 /* ########## Navbar ########## */
 
 /* Navbar */
 nav {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 /* Navbar - unordered list */
 nav ul {
-    background-color: #eee;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar - list item */
 ul.topnav li {
-    list-style: none;
-    float: left;
+  list-style: none;
+  float: left;
 }
 
 /* Navbar - list item.right */
 ul.topnav li.topnav-right {
-    float: right;
+  float: right;
 }
 
 /* Navbar - list item - anchor (the text)*/
 ul.topnav li a {
-    display: block;
-    text-decoration: none; /* takes away underline */
-    min-height: 16px;
-    text-align: center;
-    padding: 14px;
-    text-transform: uppercase;
-    color: #666;
+  display: block;
+  text-decoration: none; /* takes away underline */
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
 }
 
 /* wWenever we hover over the anchor, we do something (change background&text color) */
 ul.topnav li a:hover {
-    background-color: #8080ff;
-    color: #fff;
+  background-color: #8080ff;
+  color: #fff;
+}
+
+/* Make navbar invisible */
+ul.topnav li.dropdownIcon {
+  display: none;
+}
+
+/* ########## Mobile ########## */
+
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
 }
