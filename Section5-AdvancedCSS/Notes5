@@ -7,3 +7,14 @@ Section 5: Advanced CSS: Building and styling website
     - embedded video
     - responsive images, video, navbar..
     - 
+
+27. CSS: Building the Navbar
+    CSS Defaults: 
+      - display: block; means elements will be displayed as a block
+    CSS Navbar:
+      - width: 100%; will have the navbar be as long as the page's width
+      - margin: 0; make sure there is no default margin in the body/ no extra space on the sides
+      - *want to be mobile responsive*
+      - overflow: hidden; content is clipped and no scroll bar is provided
+      - float: left; take all of these items and "float them left"
+      - ul.topnav li a:hover {} means whenever we hover over the anchor, we do something (change background&text color)
