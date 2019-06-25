@@ -70,9 +70,9 @@ ul.topnav li.dropdownIcon {
   /* Mobile - Navbar - listItem - .dropdownIcon */
   ul.topnav li.dropdownIcon {
     display: block; /* make appear when in mobile */
-    float: right;   /* float it to the right */
+    float: right; /* float it to the right */
   }
-  
+
   /* Movile - Navbar - listItem.responsive - .dropdownIcon */
   ul.topnav.responsive li.dropdownIcon {
     position: absolute;
@@ -83,9 +83,8 @@ ul.topnav li.dropdownIcon {
   /* Mobile - Navbar.responsive */
   ul.topnav.responsive {
     position: relative;
-
   }
-  
+
   /* Mobile - Navbar - listItem.responsive */
   ul.topnav.responsive li {
     display: inline;
@@ -97,9 +96,4 @@ ul.topnav li.dropdownIcon {
     display: block;
     text-align: left;
   }
-
-
 }
-
-
-
