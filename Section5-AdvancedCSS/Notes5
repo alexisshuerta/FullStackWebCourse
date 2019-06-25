@@ -24,3 +24,21 @@ Section 5: Advanced CSS: Building and styling website
   - Media Querie: will detect the width of display and add a breakpoint to it, to add new style properties
   - Not selector for the first child = :not(:nth-child(1))
   - As you build a website sections on desktop, start building it/designing it on mobile ***
+
+29. CSS Making the Navbar Mobile Responsive - Part 2
+  - diplay:block; when you put it in as a display of block, it makes it easier to position elements
+  - often times, id's are often very abused.
+    - it is bad practice to style elements using id's, you should use a class.
+    - id's are more specific and allow us to interact with elements on a page using javascript
+  - changing a class name by appending another string will change the class.
+  
+  - position: relative; will keep navbar unordered list stable and not be shifting around
+  - display: inline; all list items will be grouped together, lining up like a span tag (in a row)
+  -* Displays and Positions can be easily overwritten
+  - to go from desktop to mobile CSS, make sure to look at the inherited styling and make sure to overwrite the styling you dont want
+  javascript:void(0);
+    - instead of putting url tag or destination, we are telling the browser
+     "hey the path we are going to is undefined, so just stay on the page"
+  - make the position of the dropdownIcon absolute befor you style the rest
+  - position: absolute; keeps element stay where they are
+    - add top:0; and right:0; to keep the element there...

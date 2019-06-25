@@ -66,4 +66,40 @@ ul.topnav li.dropdownIcon {
   ul.topnav li:not(:nth-child(1)) {
     display: none;
   }
+
+  /* Mobile - Navbar - listItem - .dropdownIcon */
+  ul.topnav li.dropdownIcon {
+    display: block; /* make appear when in mobile */
+    float: right;   /* float it to the right */
+  }
+  
+  /* Movile - Navbar - listItem.responsive - .dropdownIcon */
+  ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /* Mobile - Navbar.responsive */
+  ul.topnav.responsive {
+    position: relative;
+
+  }
+  
+  /* Mobile - Navbar - listItem.responsive */
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  /* Mobile - Navbar - listItem.responsive - anchor */
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+
 }
+
+
+
