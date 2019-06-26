@@ -11,6 +11,18 @@ body {
   margin: 0;
 }
 
+/* Label */
+label {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* Paragraph */
+p {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -71,6 +83,10 @@ body {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* ########## Navbar ########## */
 
 /* Navbar */
@@ -129,6 +145,38 @@ ul.topnav li.dropdownIcon {
   background: linear-gradient(#076dff, #65a5ff); /* Standard syntax */
 }
 
+/* Box (in 2nd Section) */
+div.box {
+  text-align: center;
+  margin: 24px;
+  padding: 36px 24px 40px 24px;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+button {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0069ff;
+  padding: 15px 60px;
+  display: block;
+  text-align: center;
+  margin: 5px;
+  border-radius: 7px;
+}
+
+button.learnMore {
+  display: block;
+  margin: auto;
+}
+
+/* Icon (icons in 2nd Section */
+div.icon {
+  width: 100%;
+}
+
 /* header column on the left side */
 div.leftSide-col {
   margin-left: 30%;
@@ -136,7 +184,7 @@ div.leftSide-col {
 
 div.rightSide-col {
   margin-left: 10%;
-  margin-right: 20%
+  margin-right: 20%;
 }
 
 /* Large Header styling */
@@ -145,6 +193,11 @@ h1.large {
   font-size: 56px;
   margin: 0;
   line-height: 70px;
+}
+
+h1.section2Header {
+  font-size: 65px;
+  text-align: center;
 }
 
 /* Form - header2 */
@@ -206,10 +259,20 @@ input[type="text"] {
     text-align: left;
   }
 
+  h1.section2Header {
+    font-size: 50px;
+  }
+
   /* Mobile - columns6 */
+  div.col-4,
   div.col-6 {
     width: 100%;
     margin: 0;
+  }
+
+  div.box {
+    padding: 5px;
+    display: block;
   }
 
   /* Mobile - left&rightside col */
@@ -221,5 +284,4 @@ input[type="text"] {
   input[type="text"] {
     width: 350px;
   }
-
 }

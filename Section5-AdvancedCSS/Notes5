@@ -58,3 +58,9 @@ Section 5: Advanced CSS: Building and styling website
   31. CSS: Working with iframes
     iframe:
       - Video : get from youtube and seletct share-embedd-copy-paste iframe
+
+  32. CSS: Working with images and box shadows
+    - Header will sit on top of the container w/ 3 columns
+    - Header tag is like a container
+    - If you text-align: center; a parent, then it will look at the children and center all text elements
+    
