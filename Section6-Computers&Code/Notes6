@@ -3,7 +3,7 @@ Section 6: Computers & Code
 35. How Computers Work
   - How does input turn into binary?
   - physical keyboard action -> binary?
-  
+
   BIOS - Basic Input Output System
   CPU - Central processing unit - brain
 
@@ -17,3 +17,72 @@ Section 6: Computers & Code
   -BIOS allows/denies information to CPU
   -BIOS requests programs from memory
   -Programs turn on/off transistors
+
+36. Understanding binary
+ ASCII: American Standard Code for Information Interchange
+  - a correlation chart from binary to a letter
+  - a binary value == a letter
+  
+37. How code works
+  - Source code -> compiler -> Low-level language
+  Machine Code / Assembly:
+
+  Assembly:
+    - utilizes registers
+    Registers
+      - between 8-32 global variables which are the registers
+      - can store information/calculations/instructions
+      - what doesnt fit in the register is stored in memory(RAM)
+
+  Shell program
+    - program that runs programs
+  Operating System
+    - context switching
+  
+38. Heap vs Stack
+
+  Heap:
+    - *min*/max heaps
+    - organized from least to greatest values
+    - as you branch down the heap, the values get larger
+    - consists of parents and children
+    - use an array to "house" a heap
+    - parent: index-2 / 2
+    - childL: index*2 +1
+    - childR: index*2 +2
+
+  Stack:
+    - LIFO: Last in First Out
+    - push: puts an item to the stack
+    - pop: remove the top item from the stack and return it
+    - peek: looks at the top item
+    - use an array
+
+39. Understanding Hexadecimal
+  - Decimal number is base 10 (0-9)
+  - Binary is base 2 (0-1)
+  - Hex is base 16 (0-9,A-F)
+
+  Hexadecimal
+  - A=10, B=11...
+  - place values from right to left are:
+    16^0 , 16^1, 16^2 ...
+
+40. Variables and Storage Capacity
+
+  Device Architecture
+    - 8, 16, 32, 64 processor
+  Variable:
+    - a value that is stored in memory and use/modified by a program
+    - int, boolean, ..
+
+  Unsigned & Signed integers:
+    - unsigned = positive or negative integer
+
+  Decimal:
+    - Double(64bit) or float(32bit)
+    - double is more accurate
+  String:
+    - can hold 32bit or 64bit of data
+  
+
