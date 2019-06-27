@@ -236,6 +236,30 @@ input[type="text"] {
   border-color: white;
 }
 
+
+footer.footsy {
+  background-color: #666;
+  padding-left: 10%;
+
+}
+
+footer.footsy h1 {
+  color:#fff;
+  font-size: 35px;
+}
+
+footer.footsy ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+footer.footsy ul li {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
 /* ########## Mobile ########## */
 
 @media screen and (max-width: 680px) {
@@ -290,13 +314,18 @@ input[type="text"] {
     margin: 0;
   }
 
+  div.mobileStack {
+    width: 50%;
+    display: block;
+  }
+
   div.box {
     padding: 5px;
     display: block;
   }
 
   div.imageIcon {
-    margin: 10px;
+    margin: 50px;
   }
 
   div.imageIcon img {

@@ -63,4 +63,14 @@ Section 5: Advanced CSS: Building and styling website
     - Header will sit on top of the container w/ 3 columns
     - Header tag is like a container
     - If you text-align: center; a parent, then it will look at the children and center all text elements
+    - use lorem ipsum text for placeholder text
+    - tips of styling in video bookmarks
+
+  33. CSS: Working with text and image spacing
+    - my image didnt center with margin: auto;
+    - 
+
+  34. CSS: Building the Footer
+    - after you build the structure of the html, you then style going from parent -> child
+    - use multiple classes to make an element more specific, and everything with that class will have the same style rules
     
