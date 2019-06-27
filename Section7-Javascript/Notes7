@@ -3,3 +3,11 @@ Section 7: Learning to Code with Javascript
 41. Time to Javascript
     - alert(x) will have a popup come up on the website
     - console.log(x) prints in the console
+
+42. Javascript Reference
+    - ex: lookup Javascript String
+        - MDN -> more indepth documentaion
+        - W3Schools -> more beginner friendly
+    - JSbin.com
+        - online "ide" for html, css, js, console
+    
