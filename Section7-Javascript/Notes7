@@ -113,4 +113,8 @@ Section 7: Learning to Code with Javascript
         - there are small differences, so it would be good to look into..?
     - when calculate is pressed, the page refreshes... may have to disable that..
 
-54. Percentage Calculator - 
+54. Percentage Calculator - Grabbing Elements with Javascript
+    - document.getElementById('name of id') to grab an element from HTML, and can store in a var
+    - numField1.value is how to reference the text inside an input field
+
+    - resultField.innerText is how to reference the text inside a Header
