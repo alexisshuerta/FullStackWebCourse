@@ -118,3 +118,8 @@ Section 7: Learning to Code with Javascript
     - numField1.value is how to reference the text inside an input field
 
     - resultField.innerText is how to reference the text inside a Header
+
+55. Percentage Calculator - Using Event Listeners
+    - event listening for buttons and input type="submit" are different
+        -buttons -> onclick
+        -input submit -> form listens for click (form.addEventListener('submit', *define a function here*))
