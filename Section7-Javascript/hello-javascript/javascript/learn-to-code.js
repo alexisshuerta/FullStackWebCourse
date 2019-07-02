@@ -1,6 +1,11 @@
-var name = "Jack";
-var age = 23;
-var message = "Hi, my name is " + name + " and I am " + age + " years old!";
+//Alexs Brown's
+this.car = "Honda Civic w/ Ugly Spoiler";
 
-//alert(message);
-console.log(message);
+var marksGarage = {
+    car: "Aston Martin",
+    getCar: function() {
+        return this.car;
+    }
+};
+
+console.log(marksGarage.getCar());

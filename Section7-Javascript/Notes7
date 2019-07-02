@@ -13,4 +13,104 @@ Section 7: Learning to Code with Javascript
     
 43. Javascript: Comments & How to Link Scripts
     - dont write inline JS
-    - 
+    -
+
+44. Javascript: Variables and Strings
+    - variables are buckets of type var
+
+45. Javascript: Numbers
+    -
+
+46. Javascript: Comparison Operators
+    - == means equal to, can compare numbers and strings
+        - never ever ever use a double equal sign
+    - === means value and type are same
+    - if you have one line of code after if statement, you dont need curlys
+
+47. Javascript: Logical Operators
+    - same as java
+
+48. Javascript: Arrays
+    Syntax:
+
+    - can have mixed type of data in arrays, but DONT
+
+    var naughtyList = [];
+    var students = ["Timmy", "Janessa", "Arun"];
+
+    - adding an element = .push(x);
+
+    - removing an element (linear, not good)
+        var index = naughtyList.indexOf("Timmy");
+        if (index > -1) {naughtyList = naughtyList.splice(index,1)}
+
+    Best Practice:
+
+49. Javascript: Loops
+    - like Java
+    
+    for(var x = 0; x < total; x++){
+        ...
+    }
+
+50. Javascript: Functions
+    -
+
+51. Javascript: Objects
+    Syntax: 3 ways to create an object
+    Objects can have functions
+
+    var student0 = {
+        firstName: "John",
+        lastName: "Parker",
+        age: 7
+        greeting: function() {
+            return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+        }
+    };
+
+    console.log(student0.firstName);
+    console.log(student0.lastName);
+    console.log(student0.age);
+    console.log(student0["firstName"]) - not recommended, but same thing
+
+    //creates a new empty Object
+    var student1 = new Object();
+    student.firstName = "John";
+    student.lastName = "Parker"'
+    student1.age = 7;
+
+    var student2 = {};
+    student2.firstName = "Zack";
+    student2.lastName = "Bobo";
+    student2.age = 5;
+
+
+    -Object Constructor to create reusable code to create multiple objects
+
+    function Student(first, last, age) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        greeting: function() {
+            return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+    }
+
+    // goess through all the variables of the object student and prints the values.
+    for(var key in student)
+    {
+        console.log(student[key]);
+    }
+
+52. Javascript: Bind
+    Why use bind?
+        Need to bind variables or return variables to an object,
+        so the scope isnt lost when using *this*
+    
+
+53. Percentage Calculator - Setting up the Form
+    - input type=submit is like a button
+        - there are small differences, so it would be good to look into..?
+    - when calculate is pressed, the page refreshes... may have to disable that..
+
+54. Percentage Calculator - 
