@@ -123,3 +123,8 @@ Section 7: Learning to Code with Javascript
     - event listening for buttons and input type="submit" are different
         -buttons -> onclick
         -input submit -> form listens for click (form.addEventListener('submit', *define a function here*))
+
+56. Percentage Calculator - Algorithm & Prevent Default
+
+    - add event into the function parameter
+    - event.preventDefault(); to stop default operations after clicking button, such as refreshing the page

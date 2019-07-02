@@ -4,7 +4,7 @@ var resultField = document.getElementById('resultField');
 
 //adding event listener to form
 var form = document.getElementById('xisWhatPercentOfY')
-form.addEventListener('submit', function() {
+form.addEventListener('submit', function(event) {
 
     //if this is null or undefined
     if(!numField1.value || !numField2.value)
@@ -16,5 +16,9 @@ form.addEventListener('submit', function() {
     var x = parseFloat(numField1.value);
     var y = parseFloat(numField2.value);
 
-    alert(x + y);
+    var result = x / y;
+    var percent = result * 100;
+
+    resultField.innerText = "Answer: " + percent + "%";
+    event.preventDefault();
 });
