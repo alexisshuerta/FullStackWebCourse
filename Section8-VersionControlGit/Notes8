@@ -1,0 +1,32 @@
+Section 8: Version Control with Git
+
+57. How Version Control Works
+  - Use version control on every project!
+  What is version control?
+    - "saving"/backing up files
+    - "sharing" files
+  
+58. MacOS Terminal Basics
+  - touch - create files
+  - mkdir - make directory
+  - rm - remove files
+  - cp - copy a file, into a directory
+  ...
+
+59. Git Basics
+  - git log
+    - git checkout *copy and paste long number*
+
+60. Setting up Github on MacOS 
+  - adding SSH key
+
+61. Github vs Bitbucket
+  - bitbucket: easier to make private repos?
+
+62. Local & Remote Repositories
+  - pull = fetch & merge
+  - 
+
+63. Working through Git Merge Conflicts
+  - talk to partners on why changing same line of code
+  - can handle merge conflicts through GUI software
