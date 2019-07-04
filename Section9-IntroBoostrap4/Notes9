@@ -11,4 +11,10 @@ Section 9: Introduction to Bootstrap 4
   - unzip the zip file and delete the zipped file
   - open the starterTemplate folder in a text editor
 
-67. 
+66. Bootstrap 4: Project 
+  - copy and paste bootsrap starterTemplate
+  - make sure to include doctype html & *set language as english
+  - delete some references to the online website and since it's downloaded, we change the source to
+    the local files
+
+    
