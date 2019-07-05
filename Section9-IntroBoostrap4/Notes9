@@ -21,3 +21,30 @@ Section 9: Introduction to Bootstrap 4
   - Go to documentation -> Components
     - for a list of sample components
   -Documentation has a lot of useful information
+
+68. Bootstrap 4: Understanding Bootstrap Classes
+  - bootstrap CSS files contain already styled elements and new Classes
+
+69. Bootstrap 4: Using the Grid System
+  Containers: - MUST, HAVE TO USE THESE CONTAINERS
+    - Standard Container
+      - sort of a fixed size on the page, resizes with media queries
+    - Container Fluid
+      - fluidly keeps its relative width, which is 100%
+      - spans the whole page by default
+  Rows and Columns: - Grid System
+    - Row: horizontal container taking up the whole viewport
+      - by nature rows and containers inherit the height of the content in them
+        - therefore we give them heights to see what they look like
+    - Column: the only immediate child of a row
+      - 
+
+  - You can set multiple sizes of the columns inline for the different viewports
+  - sizes like col-sm sets it for small viewports and above, unless overwritten by a larger one.
+  - Columns all automatically stack when it gets to the mobile viewport
+  - usually start with small (sm) column viewport
+  - can nest rows and columns inside of columns
+
+    
+
+  
