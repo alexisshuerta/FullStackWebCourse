@@ -1,0 +1,9 @@
+Section 10: Bootstrap 4: Creating a Login Portal
+
+70. Bootstrap 4 Cards: Creating the Sign-in Portal Box
+  - using regular container, so it doesnt take up the whole width of the page
+  - put in empty col sections on both sides of the main col-8 section to give even spacing on the side
+    - the empty col sections take up any extra space
+  - create multiple classes inline to specifically target the sign-in containers/cards
+  - can add custome CSS to alter the default Bootstrap CSS
+  - use % for margins to have it be flexible
