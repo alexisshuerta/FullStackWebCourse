@@ -7,3 +7,9 @@ Section 10: Bootstrap 4: Creating a Login Portal
   - create multiple classes inline to specifically target the sign-in containers/cards
   - can add custome CSS to alter the default Bootstrap CSS
   - use % for margins to have it be flexible
+
+71. Bootstrap 4 Forms: Adding the input fields
+  - make sure to specify the type of input
+  - add classes, so that you can futher customize the CSS of each element/component
+  - copied and pasted a form-group from bootstrap website and altered it a bit
+  - 
