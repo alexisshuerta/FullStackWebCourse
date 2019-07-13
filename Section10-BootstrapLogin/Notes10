@@ -13,3 +13,9 @@ Section 10: Bootstrap 4: Creating a Login Portal
   - add classes, so that you can futher customize the CSS of each element/component
   - copied and pasted a form-group from bootstrap website and altered it a bit
   - 
+
+72. Bootstrap 4 Buttons: Adding the Sign In button and Labels
+  - The button should go inside the form, because it is part of the form
+  - anything that is input related should go in the form
+  - Bootstrap has different button sizes that can be used through classes(btn-lg)
+  - can find a check box in form documentation from bootstrap
