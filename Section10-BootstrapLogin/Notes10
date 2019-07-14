@@ -19,3 +19,9 @@ Section 10: Bootstrap 4: Creating a Login Portal
   - anything that is input related should go in the form
   - Bootstrap has different button sizes that can be used through classes(btn-lg)
   - can find a check box in form documentation from bootstrap
+
+73. Bootstrap 4 Grids - Finishing Mobile Compatibility
+  - dont have to change the empty col elements on either side, because they will just take up any extra space
+  - when we hit a small state, we tell the viewport to have the column be a 12
+  - inspect image to see what size to resize it to, use appropriate sized images instead of resizing in CSS
+  
