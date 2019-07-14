@@ -1,3 +1,9 @@
-.navbar-container {
-    background-color: bisque;
+.jumbotron {
+    text-align: center;
+    background: none;
+}
+
+.sectionLight {
+    background-color: #eceeef;
+    padding: 2em;
 }

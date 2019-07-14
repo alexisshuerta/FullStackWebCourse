@@ -6,4 +6,6 @@ Section 11: Bootstrap 4: Skate or Die Website
 75. Bootstrap 4: Working with Navbars
   - can change nav bar color scheme through classes
   add https:// to get to another Website
-  
+
+76. Bootstrap 4: Using Carousels
+  - changed col sizes so that it looks nice in mobile
