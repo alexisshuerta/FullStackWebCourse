@@ -9,3 +9,7 @@ Section 11: Bootstrap 4: Skate or Die Website
 
 76. Bootstrap 4: Using Carousels
   - changed col sizes so that it looks nice in mobile
+
+77. Bootstrap 5: Nesting Rows and Columns
+  - offset adds space to the left side of the column we want to work with
+  
