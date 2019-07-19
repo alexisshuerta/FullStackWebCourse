@@ -71,7 +71,8 @@
                 <img class="d-block img-fluid" src="skateOrDieStarterTemplate/assets/board.jpg" alt="First slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="skateOrDieStarterTemplate/assets/tipsolahraga.jpg" alt="Second slide" />
+                <img class="d-block img-fluid" src="skateOrDieStarterTemplate/assets/tipsolahraga.jpg"
+                  alt="Second slide" />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Skate for life!</h3>
                   <p>Show me some tricks</p>
@@ -142,11 +143,63 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="coolStuffWrapper">
-            <button type="button" class="btn btn-lg coolStuffBtn">Get Cool Stuff</button>
+            <button type="button" class="btn btn-lg coolStuffBtn" data-toggle="modal" data-target="#coolStuffModal">Get
+              Cool Stuff</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+
+    <!-- CoolStuffModal -->
+    <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <img class="img-fluid" src="skateOrDieStarterTemplate/assets/KFS_modal.png">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="modalFormWrapper">
+                    <form>
+                      <div class="form-group">
+                        <label for="formName">What's your name?</label>
+                        <input type="text" class="form-control" id="formName" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="formEmail">Where should we send your cool content?</label>
+                        <input type="text" class="form-control" id="formEmail" placeholder="Email">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"

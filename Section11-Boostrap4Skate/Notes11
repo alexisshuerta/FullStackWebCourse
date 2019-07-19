@@ -12,4 +12,10 @@ Section 11: Bootstrap 4: Skate or Die Website
 
 77. Bootstrap 5: Nesting Rows and Columns
   - offset adds space to the left side of the column we want to work with
+  - use wrappers(div tags with specified class name) to easily shift around components
   
+78. Bootstrap 4: Modals
+  - make sure to change the id's of the default Bootstrap components
+  - also change the attribute for, to something relevant to my form
+  - MAKE SURE TO HAVE A COLUMN INSIDE A ROW 
+  - 
