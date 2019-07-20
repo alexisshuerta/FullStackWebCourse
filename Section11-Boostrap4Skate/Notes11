@@ -19,3 +19,10 @@ Section 11: Bootstrap 4: Skate or Die Website
   - also change the attribute for, to something relevant to my form
   - MAKE SURE TO HAVE A COLUMN INSIDE A ROW 
   - 
+
+79. Bootstrap 4: Adding images and buttons
+  - make sure to add the bootstrap class img-fluid to img tags!
+  - TIP: if making columns of equal width(that are similar)
+    - create one column and then copy/paste it however many times is necessary
+    - change the content of the latter columns
+  

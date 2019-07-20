@@ -36,3 +36,16 @@ h5.modal-title {
   padding: 2rem;
   margin: auto;
 }
+
+.imgCenter {
+  display: block;
+  margin: auto;
+}
+
+.btnCenter {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 54%;
+}
