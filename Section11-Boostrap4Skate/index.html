@@ -157,7 +157,7 @@
               <img class="img-fluid imgCenter" src="skateOrDieStarterTemplate/assets/kickflip.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-lg btn-danger btnCenter">Kickflip</button>
+                  <button type="button" class="btn btn-lg btn-danger btnCenter" data-toggle="modal" data-target=".kf-modal-lg">Kickflip</button>
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@
               <img class="img-fluid imgCenter" src="skateOrDieStarterTemplate/assets/360flip.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-lg btn-danger btnCenter">360 Flip</button>
+                  <button type="button" class="btn btn-lg btn-danger btnCenter" data-toggle="modal" data-target=".threeSixty-modal">360 Flip</button>
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@
               <img class="img-fluid imgCenter" src="skateOrDieStarterTemplate/assets/bscrook.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-lg btn-danger btnCenter">BS Crook</button>
+                  <button type="button" class="btn btn-lg btn-danger btnCenter" data-toggle="modal" data-target=".bscrook-modal-sm">BS Crook</button>
                 </div>
               </div>
             </div>
@@ -233,6 +233,44 @@
       </div>
     </div>
 
+    <!--KickFlip Modal-->
+    <div class="modal fade kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- iframe goes here -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/tA3B1NxzmGk" allowfullscreen></iframe>
+          </div>
+          <p>Kickflips are easy, Pop, flick, catch, land, #BOOM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 360 Flip -->
+    <div class="modal fade threeSixty-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- iframe goes here -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/tA3B1NxzmGk" allowfullscreen></iframe>
+          </div>
+          <p>360 flips are easy, Pop, scissor ckick, catch, land, #BOOM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BS Crook -->
+    <div class="modal fade bscrook-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <!-- iframe goes here -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/tA3B1NxzmGk" allowfullscreen></iframe>
+          </div>
+          <p>Backside Crooks are sick! Nollie in, nollie out!</p>
+        </div>
+      </div>
+    </div>
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->

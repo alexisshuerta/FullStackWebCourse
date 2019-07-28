@@ -26,3 +26,8 @@ Section 11: Bootstrap 4: Skate or Die Website
     - create one column and then copy/paste it however many times is necessary
     - change the content of the latter columns
   
+
+80. Bootstrap 4: Sizing Modals
+  - the class modal size should match throughout the innerclasses as well *ex: lines 237 & 238
+  - a medium sized modal is the default, no need to add the modal-md class!
+  - 
