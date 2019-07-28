@@ -34,4 +34,12 @@ Section 11: Bootstrap 4: Skate or Die Website
 
 81. Bootstrap 4: Building the Footer
   - make sure to resize images correctly by changing its width in CSS and then resizing in some program
+
+82. Bootstrap 4: Working with Font Awesome Favicons
+  - favicons work like a font, so you use font/text propoerties to style
+  - w3schools font awesome intro - provides font awesome CDN
+    - put code snippet into head
+  - wrap the icons with anchor tags (<a></a>) containing an href to redirect to another page
+    - use https:// for links
+    - use target="_blank" to open the link in a new tab
   
