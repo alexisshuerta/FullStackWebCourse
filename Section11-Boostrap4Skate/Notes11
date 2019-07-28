@@ -31,3 +31,7 @@ Section 11: Bootstrap 4: Skate or Die Website
   - the class modal size should match throughout the innerclasses as well *ex: lines 237 & 238
   - a medium sized modal is the default, no need to add the modal-md class!
   - 
+
+81. Bootstrap 4: Building the Footer
+  - make sure to resize images correctly by changing its width in CSS and then resizing in some program
+  

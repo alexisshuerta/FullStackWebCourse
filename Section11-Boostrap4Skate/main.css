@@ -25,7 +25,7 @@ button.coolStuffBtn {
 }
 
 .modal-header .close {
-  margin-left: 0rem; 
+  margin-left: 0rem;
 }
 
 h5.modal-title {
@@ -48,4 +48,8 @@ h5.modal-title {
   margin-top: 15px;
   margin-bottom: 20px;
   width: 54%;
+}
+
+.footerImg {
+  padding: 15px;
 }
