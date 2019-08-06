@@ -55,7 +55,9 @@ h5.modal-title {
 }
 
 .socialWrapper {
-  margin: auto;
+  display: block;
+  padding: 15px 15px 15px;
+  text-align: center;
 }
 
 .fab {
