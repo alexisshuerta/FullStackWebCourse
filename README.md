@@ -1,49 +1,33 @@
-# Project Name
-> Here goes your awesome project description!
+# Full Stack Web Course
+> I am working through a Udemy course called "Beginner Full Stack Web Development: HTML, CSS, React&Node". What I put in this repository is mainly the exercises that I complete through the course, as well as the notes I take of each section.
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
 
 ## General info
+Through this course I am learning the fundamentals of HTML, CSS, and Javascript. I wanted to learn web development because I wanted to create a personal website, and now it is an aspect of computer science that I enjoy and it proves to be useful to understand.
 Add more general information about project. What the purpose of the project is? Motivation?
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
-
-## Setup
-Describe how to install / setup your local environement / add link to demo version.
-
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
+* HTML - version 5
+* CSS - version 3
+* Javascript - version 1.8.5
 
 ## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Notes
+* Finished Exercises
+* Folder of Resources/Handouts
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Customize the exercises
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
-
-## Inspiration
-Add here credits. Project inspired by..., based on...
+Project is: _in progress_
+Sections completed: _83/159_
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [Alexis Huerta](https://www.linkedin.com/in/alexis-huerta/) - feel free to contact me!
