@@ -25,3 +25,9 @@ Section 15: Intro to Node, Mongo, & REST API's
   - curly brace ({}) means Object
   - by default, the browser doesn't know how to deal with json
     - Get JSON View to view the formatted json text
+
+132. Basics of Node 
+  - use npm to download addons for JS
+  - the addon downloaded for this section was readline-sync
+  - it just seemed to allow user input?
+  
