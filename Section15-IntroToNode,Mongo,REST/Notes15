@@ -16,4 +16,12 @@ Section 15: Intro to Node, Mongo, & REST API's
   - *Node is a way to run javascript code*
   - Node & Express are powerful tools
   - Nodes.js package ecosystem, npm, is largest ecosystem of open source libraries
-  
+
+131. All About JSON
+  - Javascript Object Notation
+  - JSON and XML are ways to format data to send through the internet
+  - JSON has keys and values (values can be different types)
+  - JSON can have a key with an array as a values
+  - curly brace ({}) means Object
+  - by default, the browser doesn't know how to deal with json
+    - Get JSON View to view the formatted json text
