@@ -1,0 +1,13 @@
+Section 15: Intro to Node, Mongo, & REST API's 
+
+129. Understanding Web Requests
+  - HTTP : Hyper Text Transfer Protocol
+    - data sent through text, through the internet, from client to server
+  - Clients send a " GET request" when typing "devslopes.com"
+  - the server recieves the request, and accept or denies the request
+  - when accpeted, it sends a response
+    - response: Header, body(in JSON format or XML)
+  - POST request (when posting something new)
+    - "We" create a json body and send to the server, which sends to the db
+    - db sends success to server, server sends success to client
+  - PUT request (modify existing data)
