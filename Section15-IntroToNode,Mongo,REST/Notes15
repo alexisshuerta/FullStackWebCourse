@@ -30,4 +30,11 @@ Section 15: Intro to Node, Mongo, & REST API's
   - use npm to download addons for JS
   - the addon downloaded for this section was readline-sync
   - it just seemed to allow user input?
+
+133. Node Modules
+  - Dont need to put .js when exporting/require..
+  - module.export can export anything
+    - we exported a function
+    - so when someone imports using the require function, they will get a function
   
+
