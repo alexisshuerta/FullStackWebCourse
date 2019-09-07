@@ -37,4 +37,22 @@ Section 15: Intro to Node, Mongo, & REST API's
     - we exported a function
     - so when someone imports using the require function, they will get a function
   
-
+134. Building your First API
+  - node init to begin a "node project"
+  - how do we install packages to be used?
+  - use Express
+    - used to create web Requests/ knows how to deal with incoming web Requests
+    - allows us to work with REST
+  - npm install --save (want to save to package.json)
+  - if you want a package to always be in your code, always to --save
+    - even if you delete it, it will still be there.
+  - Need to always send something back in a Request
+    - it could hang up a client/server
+  - response.send() automatically creates a JSON and sends "it back"
+  
+  - run the server.js in terminal using "node server.js" command
+    - then in a browser go to localhost:3000
+    - you will see the text from the app.get function
+    - if you define /funions, add /funions to localhost:300 and you will
+    see what was defined in the app.get function
+    
