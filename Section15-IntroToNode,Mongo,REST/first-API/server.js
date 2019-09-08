@@ -71,7 +71,7 @@ app.put("/ingredients/:ingredientId", function(req, res) {
 });
 
 app.delete("/ingredients/:ingredientId", function(req, res) {
-  //look through the array to see if it is in there and delete/pop if so
+  //look through the array to see if it is in there and delete/splice if so
 
   var objectFound = false;
   for (var x = 0; x < ingredients.length; x++) {

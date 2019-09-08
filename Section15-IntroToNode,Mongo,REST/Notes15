@@ -82,3 +82,7 @@ Section 15: Intro to Node, Mongo, & REST API's
   Nodemon: will automatically update the server (restart it) when there is a change in the server.js
     - must start server with Nodemon (nodemon server.js)
     
+137. Installing MongoDB on MacOS
+  - Installing as a windows service means it will start up automatically by default
+    - it is not recommended if using sparingly..
+  - run the mongod.exe to start the DATABASE
