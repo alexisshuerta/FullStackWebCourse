@@ -77,4 +77,8 @@ Section 15: Intro to Node, Mongo, & REST API's
     - when the server goes down the info(array) resets to how it is defined in the code
   - Usually the data wont be defined in the server, but in a DATABASE, because it is more persistent
   
-
+136. URL Parameters & Delete Requests
+  - app.put is an update
+  Nodemon: will automatically update the server (restart it) when there is a change in the server.js
+    - must start server with Nodemon (nodemon server.js)
+    

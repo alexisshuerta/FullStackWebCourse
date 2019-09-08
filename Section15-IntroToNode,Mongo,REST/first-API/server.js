@@ -26,24 +26,51 @@ var ingredients = [
   }
 ];
 
-app.get("/", function(request, response) {
+app.get("/ingredients", function(req, res) {
   //when someone gets to base url, pass in a request and send back a response
-  response.send(ingredients); // ALWAYS SEND SOMETHING BACK
+  res.send(ingredients); // ALWAYS SEND SOMETHING BACK
 });
 
-app.post("/", function(request, response) {
+app.post("/ingredients", function(req, res) {
   var ingredient = request.body;
   //if error
   if (!ingredient || ingredient.text === "") {
-    response.status(500).send({ error: "Your ingredient must have text" });
-    //if successful
+    res.status(500).send({ error: "Your ingredient must have text" });
   }
   //if successful
   else {
     ingredients.push(ingredient);
-    response.status(200).send(ingredient);
+    res.status(200).send(ingredient);
   }
 });
+
+app.put("/ingredients/:ingredientId", function(req, res) {
+  var newText = req.body.text;
+  //if error
+  if (!newText || newText === "") {
+    res.status(500).send({ error: "You must provide ingredient text" });
+  }
+  //if no error
+  else {
+    //check all elements in the ingredients array to see if mathes the one to update
+    var objectFound = false;
+    for (var x = 0; x < ingredients.length; x++) {
+      var ing = ingredients[x];
+      if (ing.id === req.params.ingredientId) {
+        ingredients[x].text = newText;
+        objectFound = true;
+        break;
+      }
+    }
+    if (!objectFound) {
+      Response.status(500).send({ error: "Ingredients id not found" });
+    } else {
+      res.send(ingredients);
+    }
+  }
+});
+
+//Todo: delete
 
 app.listen(3000, function() {
   console.log("First API running on port 3000!");
