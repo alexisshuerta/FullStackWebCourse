@@ -43,8 +43,8 @@ Section 15: Intro to Node, Mongo, & REST API's
   - use Express
     - used to create web Requests/ knows how to deal with incoming web Requests
     - allows us to work with REST
-  - npm install --save (want to save to package.json)
-  - if you want a package to always be in your code, always to --save
+  - npm install --save <package goes here> (want to save a package.json)
+  - if you want a package to always be in your code, always do --save
     - even if you delete it, it will still be there.
   - Need to always send something back in a Request
     - it could hang up a client/server
@@ -55,4 +55,26 @@ Section 15: Intro to Node, Mongo, & REST API's
     - you will see the text from the app.get function
     - if you define /funions, add /funions to localhost:300 and you will
     see what was defined in the app.get function
-    
+
+135. Postman, GET & POST Requests
+  - focus on the client wanting to post new things to the server
+  - to manage data parsing get body parser (npm install --save body-parser)
+  - app.use(bodyParser...) is a layer of code that will properly format
+  - urlencoded is saying when stuff comes in we want to work with arrays and strings,
+  but reject things that aren't properly formatted
+  
+  - run server to see info in json format
+
+  Handling a POST Request:
+    - app.post(...)
+    - and you can include error handing if else statements
+    - use Postman to send a post request
+      - type in raw JSON text (set file to JSON) and send the POST request
+    - when you refresh the new info shows up
+  
+  - When the server goes down, so does the info that was added through POST Requests
+    - this happens in our case because the info is stored on the server
+    - when the server goes down the info(array) resets to how it is defined in the code
+  - Usually the data wont be defined in the server, but in a DATABASE, because it is more persistent
+  
+
