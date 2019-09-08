@@ -32,7 +32,7 @@ app.get("/ingredients", function(req, res) {
 });
 
 app.post("/ingredients", function(req, res) {
-  var ingredient = request.body;
+  var ingredient = req.body;
   //if error
   if (!ingredient || ingredient.text === "") {
     res.status(500).send({ error: "Your ingredient must have text" });
@@ -63,14 +63,31 @@ app.put("/ingredients/:ingredientId", function(req, res) {
       }
     }
     if (!objectFound) {
-      Response.status(500).send({ error: "Ingredients id not found" });
+      res.status(500).send({ error: "Ingredients id not found" });
     } else {
       res.send(ingredients);
     }
   }
 });
 
-//Todo: delete
+app.delete("/ingredients/:ingredientId", function(req, res) {
+  //look through the array to see if it is in there and delete/pop if so
+
+  var objectFound = false;
+  for (var x = 0; x < ingredients.length; x++) {
+    var ing = ingredients[x];
+    if (ing.id === req.params.ingredientId) {
+      ingredients.splice(x, 1);
+      objectFound = true;
+    }
+  }
+
+  if (!objectFound) {
+    res.status(500).send({ error: "Ingredients id not found" });
+  } else {
+    res.send(ingredients);
+  }
+});
 
 app.listen(3000, function() {
   console.log("First API running on port 3000!");
