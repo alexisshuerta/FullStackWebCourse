@@ -116,7 +116,7 @@ Section 15: Intro to Node, Mongo, & REST API's
     - will remove everything that has the mathcing JSON
   MongoDB documentation to learn all commands!
 
-141. Swag Shop API: Creating the Models (can create a base skeleton on github)
+141. Swag Shop API: Project Creation (can create a base skeleton on github)
   1. Create folder swag-shop-api
     a. create file server.js
     b. get node up and running and get packages
@@ -142,5 +142,39 @@ app.listen(3000, function(){
     d. run mongod.exe  (run db server)
     e. nodemon server.js (run server)
     f. run mongo.exe (access mongo shell)
-  
+
+142. Swag Shop API: Creating the Models 
+  - mongoose helps us structure mongodb (framework)
+  - first create the lowest level data(product) for the site
+  2. create file product.js and wishlist.js inside folder model 
+--- a. set up product.js ----------------------------------
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema; //blueprints
+
+var product = new Schema({
+  title: String,
+  price: Number,
+  likes: Number
+});
+
+//this is node, it allows you to export from a file for another file to imports
+//exporting a keyword (model) where you pass in (<name of the model>, <the Schema>)
+//schema adds rules to adding documents to the DB
+module.exports = mongoose.model('Product', product);
+--- b. set up wishlist.js -----------------------------------
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema; //blueprints
+var ObjectId = mongoose.Schema.Types.ObjectId;
+
+var wishList = new Schema({
+  title: {type: String, default: "Cool Wish List"}, //multiple options in {}
+  products:[{type:ObjectId, ref:'Product'}]         //ref:<type of Schema> Schema must be spelled the SAME!
+});
+module.exports = mongoose.model("WishList", wishList);
+-------------------------------------------------------------
+    e. import the Schema to the server.js file
+      i. var Product = require('./model/product');
+         var WishList = require('./model/wishlist');
+
+
 
