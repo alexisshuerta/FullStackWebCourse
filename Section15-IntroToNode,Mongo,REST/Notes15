@@ -82,7 +82,23 @@ Section 15: Intro to Node, Mongo, & REST API's
   Nodemon: will automatically update the server (restart it) when there is a change in the server.js
     - must start server with Nodemon (nodemon server.js)
     
-137. Installing MongoDB on MacOS
+137. Installing MongoDB on --MacOS--
   - Installing as a windows service means it will start up automatically by default
     - it is not recommended if using sparingly..
   - run the mongod.exe to start the DATABASE
+  for me: /c/Program\ Files/MongoDB/Server/4.2/bin/mongod.exe
+
+
+138. Working With the Mongo Shell
+  - Mongo is a noSQL DATABASE
+  - You insert "documents" into a collection
+    - docments are in JSON type format
+  - run mongo.exe to run the mongoDB Shell
+  for me: /c/Program\ Files/MongoDB/Server/4.2/bin/mongo.exe
+
+  Mongo Shell, Create a new DB:
+    - use <name of database>
+  -With mongoDB things are created as you use them (not like SQL)
+    - To display contents: db.<collection>.find().pretty()
+  Will be working with Mongoose - an app to interact with DB
+
