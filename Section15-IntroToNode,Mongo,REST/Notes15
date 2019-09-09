@@ -116,3 +116,31 @@ Section 15: Intro to Node, Mongo, & REST API's
     - will remove everything that has the mathcing JSON
   MongoDB documentation to learn all commands!
 
+141. Swag Shop API: Creating the Models (can create a base skeleton on github)
+  1. Create folder swag-shop-api
+    a. create file server.js
+    b. get node up and running and get packages
+      i. npm init
+        - press enter on everything
+      ii. npm install --save body-parser \
+      iii. npm install --save express     > npm install --save body-parser express mongoose
+      iv. npm install --save mongoose    /
+----c. set up server.js ----------------------------------
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var db = mongoose.connect('mongodb://localhost/swag-shop');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.listen(3000, function(){
+  console.log("Swag Shop API running on port 3000...");
+});
+-----------------------------------------------------------
+    d. run mongod.exe  (run db server)
+    e. nodemon server.js (run server)
+    f. run mongo.exe (access mongo shell)
+  
+
