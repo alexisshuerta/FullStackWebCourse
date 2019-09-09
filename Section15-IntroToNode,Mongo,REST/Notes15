@@ -111,4 +111,8 @@ Section 15: Intro to Node, Mongo, & REST API's
     - db.<collection>.update(<JSON to find the document>, {$set: <JSON of update>})
   Dont work inside your database through the shell in a real project
     - it is not reliable!
-  
+140. Deletions & Documentation
+  - To remove: db.<collection>.remove(<JSON>)
+    - will remove everything that has the mathcing JSON
+  MongoDB documentation to learn all commands!
+
