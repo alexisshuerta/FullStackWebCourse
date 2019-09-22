@@ -217,6 +217,81 @@ app.get('/product', function(req,res){
 --- e. add more items in postman (THESE ITEMS ARE PERSISTENT in the Database! Woah!) ---------------
 --- f. submit a get request with proper url ---------------------------------------------------
 
+145. Swag Shop API: Populating Data 
+
+--- g. creating a post request of a wishlist ---------------------------------------
+
+app.post('/wishlist', function(req,res){
+  var wishList = new WishList();
+  wishList.title = req.body.title;
+  wishList.save(function(err, newWishList){
+   if(err){
+     res.send({error: "Could not create wishlist"});
+   } 
+   else{
+     res.send(newWishList);
+   }
+  });
+});
+
+--- h. send a post request in postman with proper url(/wishlist) and put in a "title" in body
+// the post request will give back an "__id", which you can possible use if you save it somewhere???
+
+--- i. create a get request for a list of wishlists
+
+//get request to get the list of wishlists, now inclueds product data (using populate*)
+app.get("/wishlist", function(req, res) {
+  WishList.find({})
+    .populate({ path: "products", model: "Product" })
+    .exec(function(err, wishLists) {
+      if (err) {
+        res.status(500).send({ error: "Could not fetch wishlists" });
+      } else {
+        res.send(wishLists);
+      }
+    });
+});
+
+/*
+app.get('/wishlist', function(req,res){
+  WishList.find({}, function(err, wishLists){
+    if(err){
+      res.status(500).send({error: "Could not fetch wishlists"});
+    }
+    else{
+      res.send(wishLists);
+    }
+  });
+});
+
+*/
+
+--- j. need to create a put request to add product to a wishlist(update wishlist), to accurately test! -------
+//put request to add an item to the wishlist (put == update) updating wishlist
+app.put("/wishlist/product/add", function(req, res) {
+  //find product in DB
+  Product.findOne({ _id: req.body.productId }, function(err, product) {
+    if (err) {
+      res.status(500).send({ error: "Could not add item to wishlist" });
+    }
+    //update(find product, set/add, usual callback)
+    else {
+      WishList.update(
+        { _id: req.body.wishListId },
+        { $addToSet: { products: product._id } },
+        function(err, wishList) {
+          if (err) {
+            res.status(500).send({ error: "Could not add item to wishlist" });
+          } else {
+            res.send("Successfully added to wishlist");
+          }
+        }
+      );
+    }
+  });
+});
+
+
 
 
 
