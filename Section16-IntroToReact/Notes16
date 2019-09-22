@@ -1,0 +1,26 @@
+Section 16: Intro to React
+
+146. Swag Shop: Setting Up React Tooling
+
+    1. install and create react app
+
+        npm install -g create-react-app
+
+        create-react-app swag-shop-web
+
+        cd swag-shop-web
+        
+        npm start
+---------------------------------------------
+
+    • export default App, this allows us to use "App" like an HTML tag
+        which contains all the info from the App class
+
+            Javascript                          ES6
+
+    var React = require("react");  ===> import React from "react";
+
+    • Babel, makes ES6 -> Javascript
+
+
+
