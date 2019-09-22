@@ -22,5 +22,25 @@ Section 16: Intro to React
 
     • Babel, makes ES6 -> Javascript
 
+147. Swag Shop: Installing Bootstrap
+
+    2. setup bootstrap
+        • download css and js bootstrap files
+        • must have JQuery and library called tether for bootstrap to work here
+        JQuery: Download the compressed, production jQuery 3.4.1
+            • right click link and select save as.. then insert that file into the public/js/ folder
+        Tether: download(from github assets under releases) and put tether.min.js file in public/js/ folder
+
+    • add to public/index.html : 
+
+<link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css" />
+<script src="%PUBLIC_URL%/js/jquery-3.4.1.min.js"></script>
+<script src="%PUBLIC_URL%/js/tether.min.js"></script>
+<script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+
+    • download react developer tools in chrome
+
+    • to test if bootstrap is working - in app.js include className="container"
+
 
 
