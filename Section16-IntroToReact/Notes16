@@ -43,4 +43,9 @@ Section 16: Intro to React
     • to test if bootstrap is working - in app.js include className="container"
 
 
+148. Swag Shop: Setting Up the API
+    • I used the api from the previous section, or download it from Resources
+    • added a bit more to the API to match the Resources one
+    • start up database, server, run db shell, run react-app
+
 

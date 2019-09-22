@@ -7,6 +7,17 @@ var db = mongoose.connect("mongodb://localhost/swag-shop");
 var Product = require("./model/product");
 var WishList = require("./model/wishlist");
 
+//Allow all requests from all domains & localhost
+app.all("/*", function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With, Content-Type, Accept"
+  );
+  res.header("Access-Control-Allow-Methods", "POST, GET");
+  next();
+});
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -37,6 +48,30 @@ app.get("/product", function(req, res) {
     }
   });
 });
+
+//get request to get the list of wishlists, now inclueds product data (using populate*)
+app.get("/wishlist", function(req, res) {
+  WishList.find({})
+    .populate({ path: "products", model: "Product" })
+    .exec(function(err, wishLists) {
+      if (err) {
+        res.status(500).send({ error: "Could not fetch wishlists" });
+      } else {
+        res.send(wishLists);
+      }
+    });
+});
+
+// //get request to get the list of wishlists
+// app.get("/wishlist", function(req, res) {
+//   WishList.find({}, function(err, wishLists) {
+//     if (err) {
+//       res.status(500).send({ error: "Could not fetch wishlists" });
+//     } else {
+//       res.send(wishLists);
+//     }
+//   });
+// });
 
 //post request to put in new wishlist in DB
 app.post("/wishlist", function(req, res) {
@@ -75,30 +110,6 @@ app.put("/wishlist/product/add", function(req, res) {
   });
 });
 
-//get request to get the list of wishlists, now inclueds product data (using populate*)
-app.get("/wishlist", function(req, res) {
-  WishList.find({})
-    .populate({ path: "products", model: "Product" })
-    .exec(function(err, wishLists) {
-      if (err) {
-        res.status(500).send({ error: "Could not fetch wishlists" });
-      } else {
-        res.send(wishLists);
-      }
-    });
-});
-
-// //get request to get the list of wishlists
-// app.get("/wishlist", function(req, res) {
-//   WishList.find({}, function(err, wishLists) {
-//     if (err) {
-//       res.status(500).send({ error: "Could not fetch wishlists" });
-//     } else {
-//       res.send(wishLists);
-//     }
-//   });
-// });
-
-app.listen(3000, function() {
-  console.log("Swag Shop API running on port 3000...");
+app.listen(3004, function() {
+  console.log("Swag Shop API running on port 3004...");
 });
