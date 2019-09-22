@@ -172,14 +172,14 @@ var wishList = new Schema({
   products:[{type:ObjectId, ref:'Product'}]         //ref:<type of Schema> Schema must be spelled the SAME!
 });
 module.exports = mongoose.model("WishList", wishList);
--------------------------------------------------------------
-    c. import the Schema to the server.js file
+
+--- c. import the Schema to the server.js file --------------------------------------
       i. var Product = require('./model/product');
          var WishList = require('./model/wishlist');
 
 143. Swag Shop API: Posting Products
---- 3. create API endpoints in server.js --------------------------------------
-      a. set up a post request
+  3. create API endpoints in server.js
+--- a. set up a post request -------------------------------------------------------
 app.post('/product', function(req, res){
   var product = new Product(); //mongoose model has constructor syntax
   product.title = req.body.title;
@@ -194,11 +194,31 @@ app.post('/product', function(req, res){
   });
 });
 
-    b. in postman, send a post request(with proper url) and in the body write:
+--- b. in postman, send a post request(with proper url) and in the body write: --------------------
 {
 	"title": "Vault Boy Bobble Head",
 	"price": 23.99
 }
-    c. check through mongo shell, that you have created a new DB (swag-shop), with a collection called "products"
---------------------------------------------------------------------------------------
+--- c. check through mongo shell, that you have created a new DB (swag-shop), with a collection called "products" ----
+
+144. Swag Shop API: Fetching Products 
+--- d. set up a get request -----------------------------------------------------------------------
+app.get('/product', function(req,res){
+  Product.find({}, function(err, products){
+    if(err) {
+      res.status(500).send({error: "Could not fetch products"})
+    }
+    else{
+      res.send(products);
+    }
+  });
+});
+
+--- e. add more items in postman (THESE ITEMS ARE PERSISTENT in the Database! Woah!) ---------------
+--- f. submit a get request with proper url ---------------------------------------------------
+
+
+
+
+
 
