@@ -4,7 +4,7 @@ var Schema = mongoose.Schema; //blueprints
 var product = new Schema({
   title: String,
   price: Number,
-  likes: Number
+  likes: { type: Number, default: 0 }
 });
 
 //this is node, it allows you to export from a file for another file to imports

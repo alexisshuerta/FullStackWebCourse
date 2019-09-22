@@ -1,4 +1,4 @@
-var express = require("express"); // Acquire a package that allows for incomming of requests and the sending pack of responses
+var express = require("express"); // Acquire a package that allows for incoming of requests and the sending pack of responses
 var app = express(); //All in one --> var app = require('express')();
 var bodyParser = require("body-parser");
 
@@ -52,7 +52,7 @@ app.put("/ingredients/:ingredientId", function(req, res) {
   }
   //if no error
   else {
-    //check all elements in the ingredients array to see if mathes the one to update
+    //check all elements in the ingredients array to see if matches the one to update
     var objectFound = false;
     for (var x = 0; x < ingredients.length; x++) {
       var ing = ingredients[x];

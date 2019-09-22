@@ -80,7 +80,8 @@ Section 15: Intro to Node, Mongo, & REST API's
 136. URL Parameters & Delete Requests
   - app.put is an update
   Nodemon: will automatically update the server (restart it) when there is a change in the server.js
-    - must start server with Nodemon (nodemon server.js)
+
+    - must start server with Nodemon (nodemon server.js) or (npx nodemon server.js)
     
 137. Installing MongoDB on --MacOS--
   - Installing as a windows service means it will start up automatically by default
@@ -154,7 +155,7 @@ var Schema = mongoose.Schema; //blueprints
 var product = new Schema({
   title: String,
   price: Number,
-  likes: Number
+  likes: {type: Number, default:0} //changed to have a default value of 0
 });
 
 //this is node, it allows you to export from a file for another file to imports
@@ -172,9 +173,32 @@ var wishList = new Schema({
 });
 module.exports = mongoose.model("WishList", wishList);
 -------------------------------------------------------------
-    e. import the Schema to the server.js file
+    c. import the Schema to the server.js file
       i. var Product = require('./model/product');
          var WishList = require('./model/wishlist');
 
+143. Swag Shop API: Posting Products
+--- 3. create API endpoints in server.js --------------------------------------
+      a. set up a post request
+app.post('/product', function(req, res){
+  var product = new Product(); //mongoose model has constructor syntax
+  product.title = req.body.title;
+  product.price = req.body.price;
+  product.save(function(err, savedProduct){
+    if(err) {
+      res.status(500).send({error:"Could not save product"});
+    }
+    else {
+      res.status(200).send(savedProduct);
+    }
+  });
+});
 
+    b. in postman, send a post request(with proper url) and in the body write:
+{
+	"title": "Vault Boy Bobble Head",
+	"price": 23.99
+}
+    c. check through mongo shell, that you have created a new DB (swag-shop), with a collection called "products"
+--------------------------------------------------------------------------------------
 
