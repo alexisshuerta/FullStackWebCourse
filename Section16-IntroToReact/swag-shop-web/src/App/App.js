@@ -9,8 +9,21 @@ const http = new HttpService();
 class App extends React.Component {
   constructor(props) {
     super(props);
-    http.getProducts();
+    //need to bind functions
+    this.loadData = this.loadData.bind(this);
+
+    this.loadData();
   }
+
+  loadData = () => {
+    //products is the resolve and err is the reject from http-service.js
+    http.getProducts().then(
+      products => {
+        console.log(products);
+      },
+      err => {}
+    );
+  };
 
   render() {
     return (

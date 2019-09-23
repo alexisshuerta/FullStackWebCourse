@@ -74,3 +74,8 @@ const http = new HttpService();
     http.getProducts();
   }
 
+150. Swag Shop: Promises with ES6 & React
+    • Promises - promise to return something "in the future" with asynchronous functions
+    • bind functions to components
+    • 
+
