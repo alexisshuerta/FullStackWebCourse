@@ -48,4 +48,29 @@ Section 16: Intro to React
     • added a bit more to the API to match the Resources one
     • start up database, server, run db shell, run react-app
 
+149. Swag Shop: Creating a HTTP Service
+    • created an App folder to isolate individual components
+    • created services folder, which are functions that the user wont see 
+    • install whatwg-fetch (library that makes web requests for us)
+        npm install --save whatwg-fetch
+
+--- create http-service.js --------------------------------------------
+import "whatwg-fetch"; //we don't have to store in a variable
+
+class HttpService {
+  //this is equivalent to var getProducts = function(){}
+  getProducts = () => {
+    fetch("http//localhost:3004/product").then(res => {})
+  };
+}
+
+--- add to App.js ----------------------------------
+//outside class as a global variable
+const http = new HttpService();
+
+//inside class
+  constructor(props) {
+    super(props);
+    http.getProducts();
+  }
 
