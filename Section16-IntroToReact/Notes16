@@ -79,3 +79,13 @@ const http = new HttpService();
     • bind functions to components
     • 
 
+151. Swag Shop: Components in React - Website Product
+    • the more you break things down, the more reusable it is (components)
+    • Component:
+        • Create a new class that extends Component
+        • give it a render method that has html in it(Bootstrap)
+         • think small with the component, just have it render the component
+    • Export default Compnent;
+
+    • to use the component, include it somewhere as a tag <Component />
+    • 
