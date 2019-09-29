@@ -11,14 +11,16 @@ const http = new HttpService();
 class App extends React.Component {
   constructor(props) {
     super(props);
-    //need to bind functions
+    //! need to bind functions
     this.loadData = this.loadData.bind(this);
 
     this.loadData();
   }
 
+  // calls the get products function from HTTPService
   loadData = () => {
     //products is the resolve and err is the reject from http-service.js
+    //.then is how you fulfill a promise
     http.getProducts().then(
       products => {
         console.log(products);
@@ -35,6 +37,7 @@ class App extends React.Component {
           <p>Welcome to the Swag Shop!</p>
         </header>
         <div className="App-main">
+          <Product />
           <Product />
         </div>
       </div>

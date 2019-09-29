@@ -1,7 +1,7 @@
 import "whatwg-fetch"; //we don't have to store in a variable
 
 class HttpService {
-  //this is equivalent to var getProducts = function(){}
+  //this is equivalent to var getProducts = function(){...}
   getProducts = () => {
     var promise = new Promise((resolve, reject) => {
       fetch("http://localhost:3004/product").then(response => {

@@ -46,7 +46,7 @@ Section 16: Intro to React
 148. Swag Shop: Setting Up the API
     • I used the api from the previous section, or download it from Resources
     • added a bit more to the API to match the Resources one
-    • start up database, server, run db shell, run react-app
+    • start up database, server, run db shell, run react-app(npm start in root)
 
 149. Swag Shop: Creating a HTTP Service
     • created an App folder to isolate individual components
