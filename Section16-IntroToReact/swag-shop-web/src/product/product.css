@@ -1,0 +1,9 @@
+.product {
+  width: 15rem;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.product img {
+  max-height: 15rem;
+}

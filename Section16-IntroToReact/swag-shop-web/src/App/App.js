@@ -36,9 +36,45 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>Welcome to the Swag Shop!</p>
         </header>
-        <div className="App-main">
-          <Product />
-          <Product />
+        <div className="container App-main">
+          <div className="row">
+            <Product
+              className="col-sm-4"
+              price="1.69"
+              title="Hot Cheetos"
+              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
+            />
+            <Product
+              className="col-sm-4"
+              price="1.69"
+              title="Hot Cheetos"
+              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
+            />
+            <Product
+              className="col-sm-4"
+              price="1.69"
+              title="Hot Cheetos"
+              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
+            />
+            <Product
+              className="col-sm-4"
+              price="1.69"
+              title="Hot Cheetos"
+              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
+            />
+            <Product
+              className="col-sm-4"
+              price="1.69"
+              title="Hot Cheetos"
+              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
+            />
+            <Product
+              className="col-sm-4"
+              price="1.69"
+              title="Hot Cheetos"
+              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
+            />
+          </div>
         </div>
       </div>
     );

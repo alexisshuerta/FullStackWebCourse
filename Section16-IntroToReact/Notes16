@@ -89,3 +89,26 @@ const http = new HttpService();
 
     • to use the component, include it somewhere as a tag <Component />
     • 
+
+152. Swag Shop: Props in React
+    • Properties = props, come from above (parent componenets)
+    • prop ex (in App component): 
+
+<Product price="4.23" title="Cool Toy Gun" imgUrl="......"/>
+
+    • you are passing in as attributes like in html elements
+    • Using props, in Product component:
+
+this.props.<propName>
+
+    • work flow: create componenet, pass down needed props with fake data, to quickly get the UI in place
+
+    • instead of using card class for product, create own css product class and set sizes
+    • for top padding , it should be handled by the parent 
+
+    • you can put multiple 
+
+    
+
+
+
