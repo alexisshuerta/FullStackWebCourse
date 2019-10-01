@@ -100,8 +100,8 @@ Section 15: Intro to Node, Mongo, & REST API's
   Mongo Shell, Create a new DB:
     - use <name of database>
   -With mongoDB things are created as you use them (not like SQL)
-    - To display contents: db.<collection>.find().pretty()
-    - To insert a new element: db.<collection>.insert(<JSON>)
+    - To display contents: db.<collection>.find().pretty()        ************
+    - To insert a new element: db.<collection>.insert(<JSON>)     ************
   Will be working with Mongoose - an app to interact with DB
 
 139. Searching for Documents
@@ -109,11 +109,11 @@ Section 15: Intro to Node, Mongo, & REST API's
     - search by ID: find({'_id':ObjectId("a234325gfa324")})
     - search by productName: find({'productName':'Blue Car;})
   - Updating a specific document
-    - db.<collection>.update(<JSON to find the document>, {$set: <JSON of update>})
+    - db.<collection>.update(<JSON to find the document>, {$set: <JSON of update>})   *******
   Dont work inside your database through the shell in a real project
     - it is not reliable!
 140. Deletions & Documentation
-  - To remove: db.<collection>.remove(<JSON>)
+  - To remove: db.<collection>.remove(<JSON>)     *****
     - will remove everything that has the mathcing JSON
   MongoDB documentation to learn all commands!
 

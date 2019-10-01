@@ -108,6 +108,22 @@ this.props.<propName>
 
     • you can put multiple 
 
+153. Swag Shop: Working with Sate in React
+    • initialize a state objecdt in app.js (an empty array for products)
+
+    • create factory function to generate a production (in app.js)
+
+productList () => {
+    //map goes through every element in an array and does something(takes in callback)
+    const list = this.state.products.map.map((product) => {
+        //the key has to be here on the outermost level
+        <div> className="col-sm-4" key={product._id}>
+            <Product title={product.title} price={product.price} imgUrl={product.imgUrl} />
+        </div>
+    })
+}
+
+
     
 
 

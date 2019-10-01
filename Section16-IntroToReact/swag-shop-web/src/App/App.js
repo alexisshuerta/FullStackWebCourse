@@ -11,8 +11,12 @@ const http = new HttpService();
 class App extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = { products: [] };
+
     //! need to bind functions
     this.loadData = this.loadData.bind(this);
+    this.productList = this.productList.bind(this);
 
     this.loadData();
   }
@@ -21,12 +25,34 @@ class App extends React.Component {
   loadData = () => {
     //products is the resolve and err is the reject from http-service.js
     //.then is how you fulfill a promise
+
+    //need to create a reference to self/this.. bc don't have access to this inside promise(.then)
+    var self = this;
     http.getProducts().then(
-      products => {
-        console.log(products);
+      data => {
+        //everytime setState is called, everything in state will rerender...(refresh)
+        //! if i want something in my UI to refresh, call setState() on the highest component where i want to start
+        this.setState({ products: data });
       },
       err => {}
     );
+  };
+
+  productList = () => {
+    //map goes through every element in an array and does something(takes in callback)
+    const list = this.state.products.map(product => (
+      //the key has to be here on the outermost level
+      <div className="col-sm-4" key={product._id}>
+        <Product
+          title={product.title}
+          price={product.price}
+          imgUrl={product.imgUrl}
+        />
+      </div>
+    ));
+
+    //! list should be in parenthesis??
+    return list;
   };
 
   render() {
@@ -37,44 +63,7 @@ class App extends React.Component {
           <p>Welcome to the Swag Shop!</p>
         </header>
         <div className="container App-main">
-          <div className="row">
-            <Product
-              className="col-sm-4"
-              price="1.69"
-              title="Hot Cheetos"
-              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
-            />
-            <Product
-              className="col-sm-4"
-              price="1.69"
-              title="Hot Cheetos"
-              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
-            />
-            <Product
-              className="col-sm-4"
-              price="1.69"
-              title="Hot Cheetos"
-              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
-            />
-            <Product
-              className="col-sm-4"
-              price="1.69"
-              title="Hot Cheetos"
-              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
-            />
-            <Product
-              className="col-sm-4"
-              price="1.69"
-              title="Hot Cheetos"
-              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
-            />
-            <Product
-              className="col-sm-4"
-              price="1.69"
-              title="Hot Cheetos"
-              imgUrl="https://images.freshop.com/00028400433938/db0d7f0bc64541da3d582edbd552bd8d_large.png"
-            />
-          </div>
+          <div className="row">{this.productList()}</div>
         </div>
       </div>
     );
