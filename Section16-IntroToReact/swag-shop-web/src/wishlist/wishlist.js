@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import "./wishlist.css";
 
+// Components
 import ProductCondensed from "../product-condensed/product-condensed";
+
+// Services
+import DataService from "../services/data-service";
 
 class Wishlist extends Component {
   constructor(props) {

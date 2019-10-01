@@ -128,7 +128,48 @@ productList () => {
         • Created a child component called ProductCondensed
     • used bootstrap and some dummy data to test the UI
     • Added a wishlist to App.js
-    
+
+155. Swag Shop: Building a Singleton Data Service
+    • we need a way to manage data on the front end 
+        • Redux** (Flux) is a framework for doing this
+    • I will create a singleton data service and use the Observer pattern,
+     so components can update when necessary
+     • ES6 Singleton -> only ever one instance in memory -> only can create one object/instance
+
+     • create data-service.js in services folder
+
+let instance = null;
+var wishList = [];
+
+class DataService {
+  constructor() {
+    if (!instance) {
+      instance = this;
+    }
+
+    return instance;
+  }
+
+  addWishListItem = item => {
+    wishList.push(item);
+  };
+
+  removeWishListItem = item => {
+    for (var x = 0; x < wishList.length; x++) {
+      if (wishList[x]._id == item._id) {
+        wishList.splice(x, 1);
+        break;
+      }
+    }
+  };
+}
+
+export default DataService;
+
+    • need to import DataServices where it wil be used (WishList)
+
+
+
 
 
 
