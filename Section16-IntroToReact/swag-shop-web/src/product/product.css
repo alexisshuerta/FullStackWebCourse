@@ -1,7 +1,6 @@
 .product {
-  width: 15rem;
+  max-width: 15rem;
   margin: auto;
-  margin-bottom: 4rem;
 }
 
 .product img {

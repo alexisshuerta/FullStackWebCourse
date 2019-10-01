@@ -109,7 +109,7 @@ this.props.<propName>
     • you can put multiple 
 
 153. Swag Shop: Working with Sate in React
-    • initialize a state objecdt in app.js (an empty array for products)
+    • initialize a state object in app.js (an empty array for products)
 
     • create factory function to generate a production (in app.js)
 
@@ -123,7 +123,11 @@ productList () => {
     })
 }
 
-
+154. Swag Shop: Creating a WishList Component
+    • create WishList Component
+        • Created a child component called ProductCondensed
+    • used bootstrap and some dummy data to test the UI
+    • Added a wishlist to App.js
     
 
 
